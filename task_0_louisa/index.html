@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Louisa Ememandu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-theme="light">
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        🌙 Dark Mode
+    </button>
+
+    <main>
+        <article data-testid="test-profile-card" aria-label="Profile Card">
+        <figure>
+            <img src="profile.jpg"
+            alt="Profile picture"
+            data-testid="test-user-avatar"/>
+            <figcaption>Profile Picture</figcaption>
+        </figure>
+
+        <div class="profile-content">
+            <header>
+                <h1 data-testid="test-user-name">Louisa Ememandu</h1>
+            </header>
+
+            <section aria-labelledby="bio-heading">
+                <h2 id="bio-heading" class="visually-hidden">About Louisa</h2>
+                <p data-testid="test-user-bio">
+                    Louisa is an aspiring frontend engineer and designer with a love for making digital products visually appealing.
+                    She has a passion for coding, design and all things food.
+                </p>
+                <p>Time: <time data-testid="test-user-time" datetime=""></time></p>
+            </section>
+
+            <nav data-testid="test-user-social-links" aria-label="Social Media Links">
+                <ul>
+                    <li>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-youtube">YouTube</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section aria-labelledby="hobbies-heading">
+                <h2 id="hobbies-heading">Hobbies</h2>
+                <ul data-testid="test-user-hobbies">
+                    <li>📚 Reading</li>
+                    <li>✍️ Writing</li>
+                    <li>🍳 Cooking</li>
+                </ul>
+            </section>
+            <section aria-labelledby="dislikes-heading">
+                <h2 id="dislikes-heading">Dislikes</h2>
+                <ul data-testid="test-user-dislikes">
+                    <li>🌐 Slow websites</li>
+                    <li>🐛 Insects</li>
+                    <li>🥑 Avocado</li>
+                </ul>
+            </section>
+        </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
